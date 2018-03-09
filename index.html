@@ -4,17 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Колизей</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
 	<meta name="theme-color" content="#000000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
     <link rel="stylesheet" href="css/main.min.css">
     
     <link rel="icon" type="image/svg+xml" href="img/icon.jpg">
+<!--
 	<meta property=og:title content="Фитнес-студия 'Стиль Жи'" />
 	<meta property=og:url content="https://koliseum-perm.ru/"/>
 	<meta property=og:image content="https://koliseum-perm.ru/img/logo.png"/>
 	<meta property=og:description content="Фитнес-центр Колизей - главный эксперт фитнес-индустрии Пермского края! В самом центре города 365 дней в году мы предоставляем полный комплекс фитнес-услуг." />
+-->
 <!--
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107323584-1"></script>
 	<script>
@@ -158,13 +160,12 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<button type="button" class="btn btn-gradient-border" id="interview-go-to-2">Вернуться назад</button>
-							<button type="button" class="btn btn-gradient-bg" id="interview-go-to-2">Продолжить</button>
+							<button class="step__nav-btn btn btn-gradient-bg" data-step="2" type="button">Продолжить</button>
 						</div>
 					</div>
 					<div class="step__item" id="interview-step-2">
-						<div class="step__number">Вопрос №2</div>
-						<div class="step__title">с кем вы будете посещать наш фитнес-клуб?</div>
+						<div class="step__number">Вопрос #2</div>
+						<div class="step__title">С кем вы будете посещать клуб?</div>
 						<div class="step__form">
 							<div class="step__input-group">
 								<input  id="2-step-alone" type="radio" class="checkbox checkbox_long" name="how-many-guests" value="Один / одна">
@@ -180,12 +181,13 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<button type="button" class="btn btn_orange" id="interview-go-to-3">Продолжить опрос</button>
+							<button class="step__nav-btn btn btn-gradient-border" data-step="1" type="button">Вернуться назад</button>
+							<button class="step__nav-btn btn btn-gradient-bg"     data-step="3" type="button">Продолжить</button>
 						</div>
 					</div>
 					<div class="step__item " id="interview-step-3">
-						<div class="step__number">Вопрос №3</div>
-						<div class="step__title">НА КАКОЙ СРОК ИНТЕРЕСУЕТ ФИТНЕС-КАРТА?</div>
+						<div class="step__number">Вопрос #3</div>
+						<div class="step__title">На какой срок интересует карта?</div>
 						<div class="step__form">
 							<div class="step__input-group">
 								<input  id="3-step-24m" type="radio" class="checkbox checkbox_long" name="period" value="24">
@@ -201,12 +203,13 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<button type="button" class="btn btn_orange" id="interview-go-to-4">Продолжить опрос</button>
+							<button class="step__nav-btn btn btn-gradient-border" data-step="2" type="button">Вернуться назад</button>
+							<button class="step__nav-btn btn btn-gradient-bg"     data-step="4" type="button">Продолжить</button>
 						</div>
 					</div>
 					<div class="step__item " id="interview-step-4">
-						<div class="step__number">Вопрос №4</div>
-						<div class="step__title">В КАКОЕ ВРЕМЯ ВАМ УДОБНО ЗАНИМАТЬСЯ?</div>
+						<div class="step__number">Вопрос #4</div>
+						<div class="step__title">В какое время вам удобно заниматься?</div>
 						<div class="step__form">
 							<div class="step__input-group">
 								<input  id="4-step-any-time" type="radio" class="checkbox checkbox_long" name="time" value="В любое время">
@@ -222,12 +225,13 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<button type="button" class="btn btn_orange" id="interview-go-to-5">Продолжить опрос</button>
+							<button class="step__nav-btn btn btn-gradient-border" data-step="3" type="button">Вернуться назад</button>
+							<button class="step__nav-btn btn btn-gradient-bg"     data-step="5" type="button">Продолжить</button>
 						</div>
 					</div>
 					<div class="step__item " id="interview-step-5">
-						<div class="step__number">Вопрос №5</div>
-						<div class="step__title">ВЫБЕРИТЕ ИНТЕРЕСУЮЩИЕ ВАС ФИТНЕС-НАПРАВЛЕНИЯ:</div>
+						<div class="step__number">Вопрос #5</div>
+						<div class="step__title">Выберите интересующие направления</div>
 						<div class="step__form">
 							<div class="step__left-block">
 								<div class="step__input-group">
@@ -283,11 +287,13 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<button type="button" class="btn btn_orange" id="interview-go-to-6">Продолжить опрос</button>
+							<button class="step__nav-btn btn btn-gradient-border" data-step="4" type="button">Вернуться назад</button>
+							<button class="step__nav-btn btn btn-gradient-bg"     data-step="6" type="button">Продолжить</button>
 						</div>
 					</div>
+					
 					<div class="step__item" id="interview-step-6">
-						<div class="step__title"><span class="orange">ВВЕДИТЕ ВАШи данные</span> ДЛЯ РЕЗЕРВИРОВАНИЯ СКИДКИ</div>
+						<div class="step__title">Введите Ваши данные для резервирования скидки</div>
 						<div class="step__form">
 							<div class="step__input-group">
 								<input required id="6-step-name" type="text" class="step__input input-text" name="name" autocomplete="name" placeholder="Введите Ваше имя">
@@ -300,8 +306,12 @@
 							</div>
 						</div>
 						<div class="step__bottom">
-							<div class="step__note">На указанный адрес эл. почты будет выслано предложение с доп. скидками и бонусами</div>
-							<button type="submit" class="step__btn-submit btn btn_orange">Получить скидку</button>
+						
+							<div class="step__checkbox-block">
+								<input  id="step__personal-data" type="checkbox" required name="personal-data" class="checkbox checkbox_small step__checkbox" checked>
+								<label for="step__personal-data" class="step__checkbox-label">Я согласен на обработку персональных данных</label> 
+							</div>
+							<button type="submit" class="step__btn-submit btn btn-gradient-bg">Продолжить</button>
 							<input type="hidden" name="form-type" value="interview">
 						</div>
 					</div>
@@ -317,9 +327,9 @@
 					
 					<div class="bonuses__item" id="bonus-1">Персональные занятия в тренажерном зале</div>
 					<div class="bonuses__item" id="bonus-2">Персональные занятия по групповым направлениям</div>
-					<div class="bonuses__item" id="bonus-5">Гостевой визит для друга</div>
 					<div class="bonuses__item" id="bonus-3">Медицинское тестирование</div>
 					<div class="bonuses__item" id="bonus-4">Консультация косметолога</div>
+					<div class="bonuses__item" id="bonus-5">Гостевой визит для друга</div>
 				</div>
 			</div>
 		</div>
@@ -329,20 +339,32 @@
 			<h1 class="section-title">УСЛУГИ ФИТНЕС СТУДИИ</h1>
 			<p class="section-services__description">Стиль Жи – это множество вариаций тренировок по различным спортивным категориям, которые помогут вам поддерживать идеальную физическую форму, оставаться крепким и энергичным. <span>Мы делаем все, чтобы вы были красивы и здоровы!</span></p>
 		
+			<svg width="0" height="0" style="display: block;">
+				<defs>
+					<path id="services-path" d="M53.192,1.42 L362.359,39.57 C383.276,42.15 396.688,64.9 392.997,89.64 L357.168,329.82 C354.711,346.29 339.447,360.7 322.659,362.46 L86.966,387.25 C63.615,389.71 42.242,376.3 39.748,356.62 L1.472,54.63 C-2.687,21.81 20.895,-2.56 53.192,1.42 Z"></path>
+
+					<pattern id="services-pattern-1" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-1.jpg"></image>
+					</pattern>
+					<pattern id="services-pattern-2" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-2.jpg"></image>
+					</pattern>
+					<pattern id="services-pattern-3" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-3.jpg"></image>
+					</pattern>
+					<pattern id="services-pattern-4" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-4.jpg"></image>
+					</pattern>
+					<pattern id="services-pattern-5" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-5.jpg"></image>
+					</pattern>
+				</defs>
+			</svg>
 			<div class="services-slider">
 				<div class="services-slider__item">
 					<div class="services-slider__img">
 						<svg width="393px" height="387px" viewBox="0 0 393 387" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<defs>
-								<path d="M53.192,1.42 L362.359,39.57 C383.276,42.15 396.688,64.9 392.997,89.64 L357.168,329.82 C354.711,346.29 339.447,360.7 322.659,362.46 L86.966,387.25 C63.615,389.71 42.242,376.3 39.748,356.62 L1.472,54.63 C-2.687,21.81 20.895,-2.56 53.192,1.42 Z" id="path-1"></path>
-								<pattern id="pattern-1" patternUnits="objectBoundingBox" height="100%" width="100%">
-									<image width="393" height="387" xlink:href="img/services-1.jpg"></image>
-								</pattern>
-							</defs>
-							<g class="test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<use fill="url(#pattern-1)" xlink:href="#path-1"></use>
-<!--								<use fill-opacity="0.69" fill="#000000" xlink:href="#path-1"></use>-->
-							</g>
+							<use xlink:href="#services-path" fill="url(#services-pattern-1)"></use>
 						</svg>
 					</div>
 					<div class="services-slider__info">
@@ -351,42 +373,141 @@
 						<div class="services-slider__text">Плащадь тренажерного зала 700 кв. метров, в нем представено более 120 тренажеров от ведущих производителей марок Precor, Cybex и Hoist. Тренерами студии являются: чемпионы края, России, Европы и мира.</div>
 					</div>
 				</div>
+				<div class="services-slider__item">
+					<div class="services-slider__img">
+						<svg width="393px" height="387px" viewBox="0 0 393 387" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="#services-path" fill="url(#services-pattern-2)"></use>
+						</svg>
+					</div>
+					<div class="services-slider__info">
+						<div class="services-slider__number">02 <span>/05</span></div>
+						<div class="services-slider__title">Зал групповых программ</div>
+						<div class="services-slider__text">В клубе представлено 40 групповых программ: танцевальные направления, функциональные и силовые уроки, Mind & body, единоборства. За неделю проходит 124 групповых тренировки.</div>
+					</div>
+				</div>
+				<div class="services-slider__item">
+					<div class="services-slider__img">
+						<svg width="393px" height="387px" viewBox="0 0 393 387" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="#services-path" fill="url(#services-pattern-3)"></use>
+						</svg>
+					</div>
+					<div class="services-slider__info">
+						<div class="services-slider__number">03 <span>/05</span></div>
+						<div class="services-slider__title">Зал йоги</div>
+						<div class="services-slider__text">Одним из основных направлений Стиль Жи явлется йога, в студии представлены такие ее виды как: Antigravity Yoga (24 гамака), Hatha Yoga, Ishvara Yoga, Yoga sUtra, Yoga Therapy, Mama yoga, Neuro Yoga и др.</div>
+					</div>
+				</div>
+				<div class="services-slider__item">
+					<div class="services-slider__img">
+						<svg width="393px" height="387px" viewBox="0 0 393 387" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="#services-path" fill="url(#services-pattern-4)"></use>
+						</svg>
+					</div>
+					<div class="services-slider__info">
+						<div class="services-slider__number">04 <span>/05</span></div>
+						<div class="services-slider__title">Зал pilates</div>
+						<div class="services-slider__text">В Стиль Жи функционирует единственный в Перми зал пилатес с крупным оборудованием мирового уровня марок: Cadillac и Reformer. Также по данному направлению проводятся групповые программы: Pilates Classic, Peak Pilates, Pilates Antistress и др.</div>
+					</div>
+				</div>
+				<div class="services-slider__item">
+					<div class="services-slider__img">
+						<svg width="393px" height="387px" viewBox="0 0 393 387" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="#services-path" fill="url(#services-pattern-5)"></use>
+						</svg>
+					</div>
+					<div class="services-slider__info">
+						<div class="services-slider__number">05 <span>/05</span></div>
+						<div class="services-slider__title">Фитнес-бар</div>
+						<div class="services-slider__text">Для Вашего удобства в клубе работает фитнес-бар Мы используем только натуральные продукты и ежедневно готовим для Вас сотни вкусных блюд.</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="section-gallery">
 		<div class="container">
 			<h1 class="section-title section-title_black">Фотографии студии</h1>
-		</div>
-	</div>
-<!--
-	<div class="section-gallery">
-		<div class="container container-l">
-			<h1 class="section-title">Фотогалерея клуба</h1>
-			<div class="gallery">
-				<div class="gallery-slider">
-					<img alt="Ресепшен" src="img/gallery-1.jpg" alt="" class="gallery-slider__img">
-					<img alt="Фитнес бар" src="img/gallery-2.jpg" alt="" class="gallery-slider__img">
-					<img alt="Кардиозона" src="img/gallery-3.jpg" alt="" class="gallery-slider__img">
-					<img alt="Тренажерный зал" src="img/gallery-4.jpg" alt="" class="gallery-slider__img">
-					<img alt="Зона свободных весов" src="img/gallery-5.jpg" alt="" class="gallery-slider__img">
-					<img alt="Зал cycle" src="img/gallery-6.jpg" alt="" class="gallery-slider__img">
-					<img alt="Зал бокса" src="img/gallery-7.jpg" alt="" class="gallery-slider__img">
-					<img alt="Детский центр" src="img/gallery-8.jpg" alt="" class="gallery-slider__img">
-					<img alt="Зал групповых программ" src="img/gallery-9.jpg" alt="" class="gallery-slider__img">
-					<img alt="Игровой зал" src="img/gallery-10.jpg" alt="" class="gallery-slider__img">
-					<img alt="Скалодром" src="img/gallery-11.jpg" alt="" class="gallery-slider__img">
+			<svg width="0" height="0">
+				<defs>
+					<path id="gallery-path-1" d="M35.535,1.02 L287.694,11.36 C307.878,12.18 321.068,31.43 317.418,53.54 L282.757,263.51 C280.43,277.61 266.11,288.82 250.632,288.95 L59.468,290.49 C42.84,290.63 27.938,279.16 26.218,264.45 L0.318,42.85 C-2.44,19.24 13.347,0.11 35.535,1.02 Z"></path>
+					<path id="gallery-path-2" d="M278.860067,1.0658141e-14 L61.6892972,1.0658141e-14 C41.9635853,1.24344979e-14 29.3918342,12.7943821 27.7278438,25.3940199 L0.413080361,241.217301 C-1.56870655,256.789924 15.83,276.87 31.31,277 L303.865307,277 C325.368536,277 341.795589,259.564928 340,241.217301 L312.247922,25.3940199 C310.781428,12.9533972 297.104431,1.0658141e-14 278.860067,1.0658141e-14 Z"></path>
+					<path id="gallery-path-3" d="M283.47,1.02 L31.31,11.36 C11.12,12.18 -2.07,31.43 1.58,53.54 L36.24,263.51 C38.57,277.61 52.89,288.82 68.37,288.95 L259.53,290.49 C276.16,290.63 291.06,279.16 292.78,264.45 L318.68,42.85 C321.44,19.24 305.65,0.11 283.47,1.02 Z"></path>
+ 
+					<path id="gallery-path-4" d="M35.535,290.46 L287.694,280.12 C307.878,279.29 321.068,260.05 317.418,237.94 L282.757,27.96 C280.43,13.87 266.11,2.66 250.632,2.53 L59.468,0.99 C42.84,0.85 27.938,12.32 26.218,27.03 L0.318,248.63 C-2.44,272.24 13.347,291.37 35.535,290.46 Z"></path>
+					<path id="gallery-path-5" d="M278.114808,278 L61.4842254,278 C43.618266,278 29.4291665,267.249005 27.1945231,244.560124 L1.2412119,41.4942333 C-2.27564751,16.1905647 18.2790038,0.851295515 33.7590038,0.981295515 L305.989804,0.981295515 C326.373302,0.981295515 343.853506,17.4718364 340.220745,41.4942333 L314.264405,244.560124 C312.629562,265.786146 299.505647,278 278.114808,278 Z"></path>
+					<path id="gallery-path-6" d="M283.47,290.46 L31.31,280.12 C11.12,279.29 -2.07,260.05 1.58,237.94 L36.24,27.96 C38.57,13.87 52.89,2.66 68.37,2.53 L259.53,0.99 C276.16,0.85 291.06,12.32 292.78,27.03 L318.68,248.63 C321.44,272.24 305.65,291.37 283.47,290.46 Z"></path>
+ 
+				
+					<pattern id="gallery-pattern-1" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-1.jpg"></image>
+					</pattern>
+				</defs>
+			</svg>
+			<div class="gallery-group">
+				<div class="gallery-group__stroke gallery-group__stroke_bottom">
+					<svg width="319px" height="290px" viewBox="0 0 319 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-1" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-1" fill-opacity="0.69" fill="#000000"></use>
+								<image x="139" y="124" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g> 
+					</svg>
+					<svg class="gallery-group__center-item" width="341px" height="277px" viewBox="0 0 341 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-2" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-2" fill-opacity="0.69" fill="#000000"></use>
+								<image x="150" y="118" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g>
+					</svg>
+					<svg width="319px" height="290px" viewBox="0 0 319 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-3" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-3" fill-opacity="0.69" fill="#000000"></use>
+								<image x="139" y="124" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g>
+					</svg>
 				</div>
-				<div class="gallery__description">
-					<div class="gallery__item">
-						<span class="gallery__index"></span> / <span class="gallery__count"></span>
-					</div>
-					<div class="gallery__title"></div>
+				<div class="gallery-group__stroke">
+					<svg width="319px" height="290px" viewBox="0 0 319 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-4" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-4" fill-opacity="0.69" fill="#000000"></use>
+								<image x="139" y="124" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g> 
+					</svg>
+					<svg class="gallery-group__center-item" width="341px" height="277px" viewBox="0 0 341 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-5" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-5" fill-opacity="0.69" fill="#000000"></use>
+								<image x="150" y="118" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g>
+					</svg>
+					<svg width="319px" height="290px" viewBox="0 0 319 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<use xlink:href="#gallery-path-6" fill="url(#gallery-pattern-1)"></use>
+							<g class="svg__overlay">
+								<use xlink:href="#gallery-path-6" fill-opacity="0.69" fill="#000000"></use>
+								<image x="139" y="124" width="41" height="41" xlink:href="img/loupe.png"></image>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="gallery-group__bottom">
+					<button class="gallery-group__btn btn btn-gradient-border">Ещё фотографии</button>
 				</div>
 			</div>
 		</div>
 	</div>
--->
 	<div class="section-scheme">
 		<div class="section-scheme__container container container-l">
 			<h1 class="section-title" id="scheme">СХЕМА СТУДИИ "СТИЛЬ ЖИ"</h1>
@@ -473,7 +594,79 @@
 	<div class="section-group-training">
 		<div class="container">
 			<h1 class="section-title section-title_black">Групповые тренировки</h1>
-			
+			<svg width="0" height="0">
+				<defs>
+					<path id="group-training-path-1" d="M54.941,1.188 L231.727,15.571 C252.859,17.291 269.400,34.923 269.400,55.013 L269.400,153.956 C269.400,174.047 252.859,191.679 231.727,193.398 L54.941,207.781 C25.175,210.203 -0.000,191.807 -0.000,166.588 L-0.000,42.382 C-0.000,17.162 25.175,-1.234 54.941,1.188 Z"/>
+					<path id="group-training-path-2" d="M215.296,1.188 L38.510,15.571 C17.378,17.291 0.838,34.923 0.838,55.013 L0.838,153.956 C0.838,174.047 17.378,191.679 38.510,193.398 L215.296,207.781 C245.063,210.203 270.237,191.807 270.237,166.588 L270.237,42.382 C270.237,17.162 245.063,-1.234 215.296,1.188 Z"/>
+					
+					
+					<pattern id="group-training-pattern-1" patternUnits="objectBoundingBox" height="100%" width="100%">
+						<image width="393" height="387" xlink:href="img/services-1.jpg"></image>
+					</pattern>
+				</defs>
+			</svg>
+			<div class="group-training-slider">
+				<div class="group-training-slider__item">
+					<div class="group-training-slider__img">
+						
+						<svg viewBox="0 0 269 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<use xlink:href="#group-training-path-1" fill="url(#group-training-pattern-1)"></use>
+								<g class="group-training-slider__overlay">
+									<use xlink:href="#group-training-path-1" fill-opacity="0.69" fill="#000000"></use>
+									<image x="111" y="79" width="51" height="51" xlink:href="img/loupe.png"></image>
+								</g>
+							</g> 
+						</svg>
+					</div>
+					<div class="group-training-slider__title">CrossFit</div>
+				</div>
+				<div class="group-training-slider__item">
+					<div class="group-training-slider__img">
+						
+						<svg viewBox="0 0 269 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<use xlink:href="#group-training-path-2" fill="url(#group-training-pattern-1)"></use>
+								<g class="group-training-slider__overlay">
+									<use xlink:href="#group-training-path-2" fill-opacity="0.69" fill="#000000"></use>
+									<image x="111" y="79" width="51" height="51" xlink:href="img/loupe.png"></image>
+								</g>
+							</g> 
+						</svg>
+					</div>
+					<div class="group-training-slider__title">CrossFit</div>
+				</div>
+				<div class="group-training-slider__item">
+					<div class="group-training-slider__img"> 
+						
+						<svg viewBox="0 0 269 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<use xlink:href="#group-training-path-1" fill="url(#group-training-pattern-1)"></use>
+								<g class="group-training-slider__overlay">
+									<use xlink:href="#group-training-path-1" fill-opacity="0.69" fill="#000000"></use>
+									<image x="111" y="79" width="51" height="51" xlink:href="img/loupe.png"></image>
+								</g>
+							</g> 
+						</svg>
+					</div>
+					<div class="group-training-slider__title">CrossFit</div>
+				</div>
+				<div class="group-training-slider__item">
+					<div class="group-training-slider__img">
+						
+						<svg viewBox="0 0 269 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g class="svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<use xlink:href="#group-training-path-2" fill="url(#group-training-pattern-1)"></use>
+								<g class="group-training-slider__overlay">
+									<use xlink:href="#group-training-path-2" fill-opacity="0.69" fill="#000000"></use>
+									<image x="111" y="79" width="51" height="51" xlink:href="img/loupe.png"></image>
+								</g>
+							</g> 
+						</svg>
+					</div>
+					<div class="group-training-slider__title">CrossFit</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">

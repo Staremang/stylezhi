@@ -436,53 +436,93 @@ if (typeof(jQuery) !== "undefined") {
 		}
 		
 		$('#bonus-1').show();
-		$('#interview-go-to-2').click(function () {
-			if ($('#1-step-new').prop("checked") || $('#1-step-old').prop("checked")) {
+		$('.step__nav-btn').click(function () {
+			var n = +$(this).attr('data-step');
+			
+			if (n == 1) {
+				$('.step-scale__step').removeClass('active');
+				$('#step-scale-1').addClass('active');
+				
 				$('.step__item').removeClass('active');
-				$('#interview-step-2').addClass('active');
-				$('.step__discount-count').html('4000 р')
-				$('#bonus-2').show();
-				$('#step-scale-2').addClass('active');
-			} else {
-				errorMessage();
-			}
-		})
-		$('#interview-go-to-3').click(function () {
-			if ($('#2-step-alone').prop("checked") || $('#2-step-w-friends').prop("checked") || $('#2-step-w-family').prop("checked")) {
+				$('#interview-step-1').addClass('active');
+				
+				$('.bonuses__item').hide();
+				$('#bonus-1').show();
+			} else if (n == 2) {
+				if ($('#1-step-new').prop("checked") || $('#1-step-old').prop("checked")) {
+					$('.step__item').removeClass('active');
+					$('#interview-step-2').addClass('active');
+					
+					$('.bonuses__discount-count > span').html('4000');
+					
+					$('.bonuses__item').hide();
+					$('#bonus-1').show();
+					$('#bonus-2').show();
+					
+					$('.step-scale__step').removeClass('active');
+					$('#step-scale-1').addClass('active');
+					$('#step-scale-2').addClass('active');
+				} else {
+					errorMessage();
+				}
+				
+			} else if (n == 3) {
+				if ($('#2-step-alone').prop("checked") || $('#2-step-w-friends').prop("checked") || $('#2-step-w-family').prop("checked")) {
+					$('.step__item').removeClass('active');
+					$('#interview-step-3').addClass('active');
+					$('.bonuses__discount-count > span').html('6000');
+					
+					$('.bonuses__item').hide();
+					$('#bonus-1').show();
+					$('#bonus-2').show();
+					$('#bonus-3').show();
+
+					$('.step-scale__step').removeClass('active');
+					$('#step-scale-1').addClass('active');
+					$('#step-scale-2').addClass('active');
+					$('#step-scale-3').addClass('active');
+				} else {
+					errorMessage();
+				}
+				
+			} else if (n == 4) {
+				
+				if ($('#3-step-24m').prop("checked") || $('#3-step-12m').prop("checked") || $('#3-step-6m').prop("checked")) {
+					$('.step__item').removeClass('active');
+					$('#interview-step-4').addClass('active');
+					$('.bonuses__discount-count > span').html('8000');
+					
+					$('.bonuses__item').hide();
+					$('#bonus-1').show();
+					$('#bonus-2').show();
+					$('#bonus-3').show();
+					$('#bonus-4').show();
+					
+					$('.step-scale__step').removeClass('active');
+					$('#step-scale-1').addClass('active');
+					$('#step-scale-2').addClass('active');
+					$('#step-scale-3').addClass('active');
+					$('#step-scale-4').addClass('active');
+				} else {
+					errorMessage();
+				}
+			} else if (n == 5) {
+				if ($('#4-step-any-time').prop("checked") || $('#4-step-17h').prop("checked") || $('#4-step-weekend').prop("checked")) {
+					$('.step__item').removeClass('active');
+					$('#interview-step-5').addClass('active');
+					$('.bonuses__discount-count > span').html('10000')
+					
+					
+					$('.bonuses__item').show();
+					$('.step-scale__step').addClass('active');
+				} else {
+					errorMessage();
+				}
+				
+			} else if (n == 6) {
 				$('.step__item').removeClass('active');
-				$('#interview-step-3').addClass('active');
-				$('.step__discount-count').html('6000 р')
-				$('#bonus-3').show();
-				$('#step-scale-3').addClass('active');
-			} else {
-				errorMessage();
+				$('#interview-step-6').addClass('active');
 			}
-		})
-		$('#interview-go-to-4').click(function () {
-			if ($('#3-step-24m').prop("checked") || $('#3-step-12m').prop("checked") || $('#3-step-6m').prop("checked")) {
-				$('.step__item').removeClass('active');
-				$('#interview-step-4').addClass('active');
-				$('.step__discount-count').html('8000 р')
-				$('#bonus-4').show();
-				$('#step-scale-4').addClass('active');
-			} else {
-				errorMessage();
-			}
-		})
-		$('#interview-go-to-5').click(function () {
-			if ($('#4-step-any-time').prop("checked") || $('#4-step-17h').prop("checked") || $('#4-step-weekend').prop("checked")) {
-				$('.step__item').removeClass('active');
-				$('#interview-step-5').addClass('active');
-				$('.step__discount-count').html('10000 р')
-				$('#bonus-5').show();
-				$('#step-scale-5').addClass('active');
-			} else {
-				errorMessage();
-			}
-		})
-		$('#interview-go-to-6').click(function () {
-			$('.step__item').removeClass('active');
-			$('#interview-step-6').addClass('active');
 		})
 		
 		$('.scheme-list__item').hover(
@@ -502,12 +542,6 @@ if (typeof(jQuery) !== "undefined") {
 				$('.scheme-list__item').removeClass('active');
 			}
 		)
-		$('.scheme-list__btn-up').click(function() {
-			$('.scheme-list__container').animate({ scrollTop: 0 }, 500);
-		})
-		$('.scheme-list__btn-down').click(function() {
-			$('.scheme-list__container').animate({ scrollTop: 700 }, 500);
-		})
 		
 		
 		$('a[data-anchor]').anchor({
@@ -531,6 +565,26 @@ if (typeof(jQuery) !== "undefined") {
 			nav: false,
 			navText: [ '', '' ],
 			items: 1,
+			autoHeight: true,
+//				autoWidth:true, 
+//				center:true,
+//			onInitialized: sliderChange,
+//				onChanged: test,
+//			onTranslated: sliderChange,
+			responsive : {
+				768 : {
+					nav: true
+				}
+			}
+		})
+		
+		
+		$('.group-training-slider').addClass('owl-carousel owl-carousel_no-dots owl-theme');
+		$('.group-training-slider').owlCarousel({ 
+			loop: true,
+			nav: false,
+			navText: [ '', '' ],
+			items: 4,
 //			autoHeight: true,
 //				autoWidth:true, 
 //				center:true,
