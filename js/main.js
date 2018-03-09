@@ -147,17 +147,29 @@ if (typeof(jQuery) !== "undefined") {
 //				}
 //			})
 
+//		$('.nav-menu-btn').click(function() {
+//			if ($(this).hasClass('open')) {
+//				$(this).removeClass('open');
+////				$(this).children('.nav-menu-btn__text').html('Открыть меню')
+//				$('.menu-mobile').removeClass('active');
+//				$('body').css('overflow', 'auto');
+//			} else {
+//				$(this).addClass('open');
+////				$(this).children('.nav-menu-btn__text').html('Закрыть меню');
+//				$('.menu-mobile').addClass('active');
+//				$('body').css('overflow', 'hidden');
+//			}
+//		})
+		
 		$('.nav-menu-btn').click(function() {
 			if ($(this).hasClass('open')) {
 				$(this).removeClass('open');
-//				$(this).children('.nav-menu-btn__text').html('Открыть меню')
-				$('.menu-mobile').removeClass('active');
-				$('body').css('overflow', 'auto');
+				$(this).children('.nav-menu-btn__text').html('Открыть меню')
+				$('.menu').removeClass('open');
 			} else {
 				$(this).addClass('open');
-//				$(this).children('.nav-menu-btn__text').html('Закрыть меню');
-				$('.menu-mobile').addClass('active');
-				$('body').css('overflow', 'hidden');
+				$(this).children('.nav-menu-btn__text').html('Закрыть меню');
+				$('.menu').addClass('open');
 			}
 		})
 		$('.menu-mobile__link').click(function () {
@@ -227,62 +239,7 @@ if (typeof(jQuery) !== "undefined") {
 		$('.popup__btn-close').click(function () {
 			hidePopup($(this).parents('.popup'));
 		})
-//		
-//		
-//		$('form').on('submit', function (e) {
-//			e.preventDefault();
-//			
-//			
-//			var popupBlock = $(e.target).parent();
-//			if (popupBlock.attr('id') == 'callme') {
-//				if ($('#callme-name').val() == '' || $('#callme-tel').val() == '' || $('#callme-email').val() == '') {
-//					alert('Не все поля заполнены');
-//					return;
-//				}
-//			} else if (popupBlock.attr('id') == 'registration'){
-//				if ($('#promo-game').prop("checked") == false && $('#test-game').prop("checked") == false && $('#one-hour-of-play').prop("checked") == false) {
-//					alert('Не все поля заполнены');
-//					return;
-//				}
-//				
-//				if ($('#registration-name').val() == '' || $('#registration-tel').val() == '' || $('#registration-date').val() == '') {
-//					alert('Не все поля заполнены');
-//					return;
-//				}
-//			}
-//			if (typeof yaCounter47279892 != 'undefined') {
-//				yaCounter47279892.reachGoal('zayavka');
-//			} else {
-//				console.log('Adblock detected')
-//			}
-//			var data = $(this).serialize(),
-//				htmlText = popupBlock.find('.popup-wrapper__btn').html();
-//			
-//			$.ajax({
-//				type: "POST",
-//				url: url,
-//				data: data,
-//				beforeSend: function () {
-//					popupBlock.find('.popup-wrapper__btn').html('Отправка...');
-//				},
-//				error: function () {
-//					popupBlock.find('.popup-wrapper__btn').html('Ошибка');
-//					setTimeout(function () {
-//						popupBlock.find('.popup-wrapper__btn').html(htmlText);
-//					}, 5000)
-//				},
-//				success: function () {
-//					if (popupBlock.attr('id') == 'registration') {
-//						alert("Благодарим за заявку! Мы перезвоним вам в ближайшее время для подтверждения бронирования");
-//					} else if (popupBlock.attr('id') == 'callme') {
-//						alert("Благодарим за заявку! Мы перезвоним вам в ближайшее время");
-//					}
-//					
-//					hidePopup(popupBlock);
-//					popupBlock.find('.popup-wrapper__btn').html(htmlText);
-//				}
-//			});
-//		})
+		
 		
 		
 		// interview-form

@@ -2362,7 +2362,6 @@ body {
   font-size: 14px;
   background: #f4f4f4;
   color: #ffefd3;
-  background: url(/img/rm/1366.jpg) top center;
 }
 .wrapper {
   overflow: hidden;
@@ -2667,6 +2666,7 @@ img {
 .menu {
   position: absolute;
   height: 100vh;
+  width: 100%;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2678,10 +2678,12 @@ img {
 .menu__bg {
   position: absolute;
   height: 100%;
-  width: 100vw;
-  left: -100vw;
+  width: 100%;
+  left: -100%;
   -webkit-transform: skewX(0) translateZ(0);
   transform: skewX(0) translateZ(0);
+  background: black;
+  opacity: .9;
   z-index: 5;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -2692,42 +2694,44 @@ img {
   z-index: 10;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  margin-left: 50px;
   opacity: 0;
   left: -500px;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-}
-@media (min-width: 768px) {
-  .menu__container {
-    margin-left: 150px;
-  }
-}
-@media (min-width: 990px) {
-  .menu__container {
-    margin-left: 222px;
-  }
+  margin-left: 35px;
+  max-width: 300px;
 }
 .menu__link {
   display: block;
-  font-family: "BravoRG", sans-serif;
-  font-size: 46px;
-  color: white;
+  font-size: 30px;
+  color: #ffefd3;
+  font-weight: 300;
   text-decoration: none;
   margin-bottom: 10px;
 }
 .menu__link:hover {
-  color: #c90834;
+  color: #ea3e3e;
+}
+.menu__tel {
+  color: #ffefd3;
+  font-size: 30px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-top: 50px;
+  display: block;
+}
+.menu__tel span {
+  font-weight: 500;
 }
 .menu.open .menu__bg {
   left: 0;
 }
 @media (min-width: 768px) {
   .menu.open .menu__bg {
-    left: -50vw;
-    -webkit-transform: skewX(-45deg) translateZ(0);
-    transform: skewX(-45deg) translateZ(0);
+    left: -50%;
+    -webkit-transform: skewX(-20deg) translateZ(0);
+    transform: skewX(-20deg) translateZ(0);
   }
 }
 .menu.open .menu__container {
@@ -2744,6 +2748,7 @@ img {
   text-align: left;
   position: relative;
   -webkit-tap-highlight-color: transparent;
+  z-index: 10;
 }
 .nav-menu-btn__text {
   font-family: 'Muller', sans-serif;
@@ -2757,14 +2762,14 @@ img {
   width: 21px;
   height: 10px;
   display: inline-block;
-  overflow: hidden;
   margin-right: 15px;
+  vertical-align: middle;
 }
 .nav-menu-btn__icon span {
   display: block;
   margin-bottom: 2px;
   width: 100%;
-  background: #ffc600;
+  background: #8f1f74;
   height: 2px;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -2772,27 +2777,36 @@ img {
 }
 .nav-menu-btn__icon span:nth-child(2) {
   width: 80%;
+  background: #be2f58;
 }
 .nav-menu-btn__icon span:nth-child(3) {
   width: 50%;
   margin-bottom: 0;
+  background: #e43c41;
 }
 .nav-menu-btn.open .nav-menu-btn__icon span {
   width: 100%;
 }
-.nav-menu-btn.open .nav-menu-btn__icon span:nth-child(1),
-.nav-menu-btn.open .nav-menu-btn__icon span:nth-child(4) {
+.nav-menu-btn.open .nav-menu-btn__icon span:nth-child(1) {
   opacity: 0;
 }
 .nav-menu-btn.open .nav-menu-btn__icon span:nth-child(2) {
-  -webkit-transform: translateY(2px) rotate(45deg);
-  -ms-transform: translateY(2px) rotate(45deg);
-  transform: translateY(2px) rotate(45deg);
+  -webkit-transform: translateY(0) rotate(45deg);
+  -ms-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+  background: -webkit-gradient(linear, right top, left top, from(#ea3e3e), to(#891d77));
+  background: -webkit-linear-gradient(right, #ea3e3e, #891d77);
+  background: -o-linear-gradient(right, #ea3e3e, #891d77);
+  background: linear-gradient(to left, #ea3e3e, #891d77);
 }
 .nav-menu-btn.open .nav-menu-btn__icon span:nth-child(3) {
-  -webkit-transform: translateY(-2px) rotate(-45deg);
-  -ms-transform: translateY(-2px) rotate(-45deg);
-  transform: translateY(-2px) rotate(-45deg);
+  -webkit-transform: translateY(-4px) rotate(-45deg);
+  -ms-transform: translateY(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
+  background: -webkit-gradient(linear, left top, right top, from(#ea3e3e), to(#891d77));
+  background: -webkit-linear-gradient(left, #ea3e3e, #891d77);
+  background: -o-linear-gradient(left, #ea3e3e, #891d77);
+  background: linear-gradient(to right, #ea3e3e, #891d77);
 }
 .header-logo {
   background-image: url(../img/logo.png);
